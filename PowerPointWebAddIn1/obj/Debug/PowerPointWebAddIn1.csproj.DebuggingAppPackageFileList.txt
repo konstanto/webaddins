@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\PowerPointWebAddIn1Manifest.xml
+C:\Users\Oskar\Documents\GitHub\webaddins\PowerPointWebAddIn1\bin\Debug\PowerPointWebAddIn1.debugapp

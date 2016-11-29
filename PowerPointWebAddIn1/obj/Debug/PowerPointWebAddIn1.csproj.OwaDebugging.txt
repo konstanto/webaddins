@@ -1,0 +1,7 @@
+False
+bfbe8b4a-fbdd-4e23-b97b-3a5b2f5577eb938080fc-5370-4ec6-b148-b72e1ddd7c7b
+{bf92236d-312d-43f6-b877-d32f5f808f23}{0d229370-0057-456b-be74-b494f9430463}
+{9d21ca63-39ea-48b0-9513-b28372fcd771}
+1.0.0.0
+PowerPointWebAddIn1
+_layouts/15/
