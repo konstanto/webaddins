@@ -18,3 +18,11 @@ body {
 .padding {
     padding: 15px;
 }
+
+.ms-Button--primary {
+    color: white;
+}
+
+.ms-Button--primary a {
+    color: white;
+} 
