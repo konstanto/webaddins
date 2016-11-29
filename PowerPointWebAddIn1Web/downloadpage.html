@@ -1,10 +1,68 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-	<meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <script src="Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="Scripts/FabricUI/MessageBanner.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+    <!-- <script src="Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+    <!-- <script src="Scripts/Office/1/office.js" type="text/javascript"></script>  -->
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script>
+
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+
+    <!-- To enable the offline use of Office UI Fabric, use: -->
+    <!-- link rel="stylesheet" href="Content/fabric.min.css" -->
+    <!-- link rel="stylesheet" href="Content/fabric.components.min.css" -->
 </head>
 <body>
+    <div id="content-main">
+        <div class="padding">
+            <br />
+            <p class="ms-font-xxl ms-fontColor-neutralSecondary ms-fontWeight-semilight">Sample</p>
+            <br />
+            <div class="ms-font-xl ms-fontColor-neutralTertiary">Getting Started</div>
+            <p class="ms-font-m-plus ms-fontColor-neutralTertiary">This sample reads the value of the text you have selected in the slide. </p>
+            <br /><br />
+            <button class="ms-Button ms-Button--primary">
+                <a target="_blank" class="ms-Link ms-Link--hero" href="https://templafy.templafy.com/api-v1/Document/OpenDocument?temporaryFileName=2016-11-29T142715.2089635%2b0000-Base+template.pptx&documentName=Base+template.pptx&templateType=Presentation">Download Presentation</a>
+            </button>
+            <br /><br /><br />
+            <button class="ms-Button ms-Button--primary" id="get-data-from-selection">
+                <span class="ms-Link ms-Link--hero" >Test</span>
+                <!--<a target="_blank" class="ms-Link ms-Link--hero" href="https://templafyprodstor.blob.core.windows.net/templafy/templateitems/Presentation/636090664291885596.pptx?sv=2015-12-11&sr=b&sig=uiQgBdEESboR5In93v8k%2BTGmMm63hMb9I1HFpvOCj2I%3D&se=2016-11-29T15%3A42%3A55Z&sp=r&documentName=636090664291885596.pptx&assetType=Slide">Download Slide</a>-->
+            </button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="ms-Grid ms-bgColor-themeSecondary">
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col ms-u-sm12 ms-u-md12 ms-u-lg12"> <div class="ms-font-xl ms-fontColor-white">Contoso</div></div>
+            </div>
+        </div>
+    </div>
 
+    <!-- FabricUI component used for displaying notifications -->
+    <div class="ms-MessageBanner" style="position:absolute;bottom: 0;">
+        <div class="ms-MessageBanner-content">
+            <div class="ms-MessageBanner-text">
+                <div class="ms-MessageBanner-clipper">
+                    <div class="ms-font-m-plus ms-fontWeight-semibold" id="notificationHeader"></div>
+                    <div class="ms-font-m ms-fontWeight-semilight" id="notificationBody"></div>
+                </div>
+            </div>
+            <button class="ms-MessageBanner-expand" style="display:none"><i class="ms-Icon ms-Icon--chevronsDown"></i> </button>
+            <div class="ms-MessageBanner-action"></div>
+        </div>
+        <button class="ms-MessageBanner-close"> <i class="ms-Icon ms-Icon--x"></i> </button>
+    </div>
 </body>
 </html>
