@@ -21,7 +21,7 @@
     // Reads data from current document selection and displays a notification
     function getDataFromSelection() {
         $('#get-data-from-selection').html("pressed");
-        window.open("https://templafy.templafy.com/api-v1/Document/OpenDocument?temporaryFileName=2016-11-29T142715.2089635%2b0000-Base+template.pptx&documentName=Base+template.pptx&templateType=Presentation", "_self");
+        window.open("https://templafy.templafy.com/api-v1/Document/OpenDocument?temporaryFileName=2016-11-29T142715.2089635%2b0000-Base+template.pptx&documentName=Base+template.pptx&templateType=Presentation", "_blank");
 
         //Office.context.document.getSelectedDataAsync(Office.CoercionType.Text,
         //    function (result) {
